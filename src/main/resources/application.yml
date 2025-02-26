@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: mcp-sparql-server
+  ai:
+    mcp:
+      server:
+        transport: STDIO
+        name: jena-sparql
+        version: 0.0.1
+        type: SYNC
+  main:
+    banner-mode: off
