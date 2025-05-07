@@ -1,0 +1,19 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@a02a34c4d625f9be7cb89156071d8567266a2445 # v4.2.2
+        with:
+          release-type: maven
+          token: ${{ secrets.GITHUB_TOKEN }}
