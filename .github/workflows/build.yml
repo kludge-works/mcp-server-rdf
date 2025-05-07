@@ -36,6 +36,7 @@ jobs:
           mvn install
 
   compile:
+    needs: build-and-test
     strategy:
       fail-fast: true
       matrix:
