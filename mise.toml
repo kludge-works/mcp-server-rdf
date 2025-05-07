@@ -1,2 +1,4 @@
 [tools]
-java = "graalvm-community-23.0.2"
+actionlint = "latest"
+java = "graalvm-community-24.0.0"
+maven = "latest"
